@@ -1,8 +1,10 @@
-const removeFromArray = function(arr, ...numbers) {
-    
-    arr.filter(function(element){
-        return element != numbers;
-    });
+const removeFromArray = function(arr, number) {
+
+    function fCheck(element){
+        return element != number;
+    }
+
+    return  arr.filter(fCheck);
 };
 
 // Do not edit below this line

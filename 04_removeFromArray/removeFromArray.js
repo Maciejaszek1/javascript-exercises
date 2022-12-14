@@ -1,10 +1,9 @@
-const removeFromArray = function(arr, number) {
+const removeFromArray = function(arr, ...values) {
 
-    function fCheck(element){
-        return element != number;
-    }
-
-    return  arr.filter(fCheck);
+    return arr.filter((value) => {
+        return !values.includes(value);
+    });
+ 
 };
 
 // Do not edit below this line

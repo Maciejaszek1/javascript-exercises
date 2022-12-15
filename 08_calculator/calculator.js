@@ -15,16 +15,31 @@ const sum = function(nums) {
   return sum;
 };
 
-const multiply = function() {
-
+const multiply = function(nums) {
+	
+  let output = 1;
+  nums.forEach(num => {
+    output *= num;
+  });
+  return output;
 };
 
-const power = function() {
-	
+const power = function(base, exponent) {
+	return Math.pow(base, exponent);
 };
 
-const factorial = function() {
-	
+const factorial = function(num) {
+
+  let output = 1;
+
+  if(num > 0){
+    for(;num > 0; num--){
+      output *= num;
+    }
+  }
+  else return 1;
+
+  return output;
 };
 
 // Do not edit below this line

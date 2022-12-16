@@ -1,7 +1,9 @@
 const palindromes = function (string) {
-    let half = Math.floor(string.length/2);
+    
+    let string2 = string.split(" ").join("").split("!").join("").split(",").join("").split(".").join("").toUpperCase();
 
-    let arr = string.split(string[half]);
+    let half = Math.floor(string2.length/2);
+    let arr = string2.split(string2[half]);
     arr[1] = arr[1].split("").reverse().join("");
 
     return arr[0] == arr[1];
